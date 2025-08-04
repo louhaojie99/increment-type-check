@@ -1,0 +1,40 @@
+{
+  "name": "increment-type-check",
+  "version": "0.0.2",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf dist && tsc",
+    "typecheck": "ts-node ./bin/cli.ts",
+    "typecheck:update": "ts-node ./bin/cli.ts --ignore"
+  },
+  "homepage": "https://github.com/louhaojie99/increment-type-check",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/louhaojie99/increment-type-check"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "increment-type-check": "dist/cli.js"
+  },
+  "keywords": [
+    "typescript",
+    "typeCheck",
+    "type-check",
+    "increment-type-check"
+  ],
+  "author": "用于 TS 项目的增量检查工具，可以帮助你管理存量错误并专注于新代码的质量",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "strip-json-comments": "^5.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^24.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  },
+  "authors": [
+    "15896727763@163.com"
+  ]
+}

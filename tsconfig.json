@@ -1,0 +1,46 @@
+{
+  // 访问 https://aka.ms/tsconfig 了解更多配置选项
+  "compilerOptions": {
+    // 文件布局设置
+    "rootDir": "./src",
+    "outDir": "./dist",
+
+    // 环境设置
+    // 更多信息参见 https://aka.ms/tsconfig/module
+    "module": "commonjs", // 指定模块系统为 Node.js 的 ESM 模块
+    "target": "esnext", // 编译目标为最新 ES 标准
+    "types": ["node"],
+    "lib": ["esnext"],
+
+    // 更严格的类型检查选项
+    "noUncheckedIndexedAccess": true, // 对索引访问进行严格类型检查
+    "exactOptionalPropertyTypes": true, // 可选属性必须有明确类型
+
+    // 代码风格选项
+    "noImplicitReturns": true, // 函数必须有明确返回值
+    "noImplicitOverride": true, // 重写方法必须使用 override 关键字
+    "noUnusedLocals": true, // 禁止未使用的局部变量
+    "noUnusedParameters": true, // 禁止未使用的函数参数
+    "noFallthroughCasesInSwitch": true, // 禁止 switch case 穿透
+    "noPropertyAccessFromIndexSignature": true, // 禁止通过点号访问索引签名属性
+
+    // 推荐选项
+    "strict": true, // 启用所有严格类型检查
+    "jsx": "react", // 处理 JSX 的方式(这里是 React)
+    "noUncheckedSideEffectImports": true, // 检查导入是否有副作用
+    "esModuleInterop": true, // 启用ESM/CommonJs模块的兼容性
+    "skipLibCheck": true, // 跳过声明文件的类型检查
+
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+
+    "baseUrl": "./",
+    "paths": {
+      "@": ["src"]
+    }
+  },
+  // 指定要包含的文件路径模式
+  "include": ["src/**/*"],
+  "exclude": ["node_module"]
+}
