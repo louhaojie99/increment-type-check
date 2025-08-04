@@ -4,8 +4,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rm -rf dist && tsc",
-    "typecheck": "ts-node ./bin/cli.ts",
-    "typecheck:update": "ts-node ./bin/cli.ts --ignore"
+    "typecheck": "tsx ./src/index.ts",
+    "typecheck:update": "tsx ./src/index.ts --update"
   },
   "homepage": "https://github.com/louhaojie99/increment-type-check",
   "repository": {
@@ -15,7 +15,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "bin": {
-    "increment-type-check": "dist/cli.js"
+    "increment-type-check": "dist/index.js"
   },
   "keywords": [
     "typescript",
@@ -27,11 +27,11 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "strip-json-comments": "^5.0.2"
+    "strip-json-comments": "^5.0.3"
   },
   "devDependencies": {
-    "@types/node": "^24.1.0",
-    "ts-node": "^10.9.2",
+    "@types/node": "^24.2.1",
+    "tsx": "^4.20.3",
     "typescript": "^5.9.2"
   },
   "authors": [

@@ -31,10 +31,6 @@
     "esModuleInterop": true, // 启用ESM/CommonJs模块的兼容性
     "skipLibCheck": true, // 跳过声明文件的类型检查
 
-    "sourceMap": true,
-    "declaration": true,
-    "declarationMap": true,
-
     "baseUrl": "./",
     "paths": {
       "@": ["src"]

@@ -76,3 +76,5 @@ export const runIncrementalTypeCheck = (options?: TypeCheckOptions) => {
     }
   });
 };
+
+runIncrementalTypeCheck();
