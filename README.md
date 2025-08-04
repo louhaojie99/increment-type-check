@@ -23,7 +23,7 @@ npm install --save-dev increment-type-check
 {
   "scripts": {
     "typecheck": "typecheck",
-    "typecheck:update": "typecheck --update-ignore"
+    "typecheck:update": "typecheck --ignore"
   }
 }
 ```
